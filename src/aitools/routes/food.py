@@ -2,6 +2,7 @@ from flask import Blueprint, request, Response, stream_with_context
 import json
 from openai import OpenAI
 import re
+from src.aitools.config import Config
 
 food_bp = Blueprint('food', __name__, url_prefix='/api/')
 
